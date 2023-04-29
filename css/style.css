@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#eff0f4;
+}
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content:center;
+    width: 80%;
+    flex-wrap: wrap;
+    align-content: center;
+    background:rgba(250, 244, 244, 0.322);
+    margin: auto;
+    /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); */
+}
+
+.post{
+   flex-basis: 20rem;
+   flex-grow: 0;
+   background: #fff;
+   width: 26%;
+   margin: 10px;
+   padding: 10px;
+   line-height: 1.5;
+   border-radius: 20px;
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+.post h3{
+    background: #14141f;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    /* border-radius: 20px; */
+}
+.post:hover{
+    box-shadow: 20px 0 25px #eff0f4;
+    cursor: pointer;
+}
+small{
+    font-size: 25px;
+    color:red;
+}
+a{
+    background: #000;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    /* width: 50%; */
+    text-decoration: none;
+    /* border-style: ridge; */
+    border-radius: 50px;
+}
+a:hover{
+    background: #c4e5cf;
+    color: #000;
+}
+p{
+    font-weight: bold;
+}
+#error{
+    color: red;
+    background: #fff;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+}
+label{
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(11, 82, 175);
+    border: 0;
+}
+form input[type=email]{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size:1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 3px;
+    
+}
+form textarea{
+   border: 1px solid #ccc;
+   outline: none;
+   border-radius: 3px;
+}
+.btn{
+    color: #fff;
+    background: green;
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+button:hover{
+    background: #c4e5cf;
+    color: #000;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
