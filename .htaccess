@@ -1,0 +1,17 @@
+ServerSignature Off
+
+# multiple file types
+<FilesMatch ".(htaccess|htpasswd|ini|phps|fla|psd|log|sh|txt)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^(.*)$ $1.php
+
+ErrorDocument 404 /assignment/404.php

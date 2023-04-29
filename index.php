@@ -25,7 +25,7 @@ if(isset($_GET["empty"])) {
             <?php echo $post["pix"];?>
             <p>Post Description: <?php echo $post["body"];?></p>
             <p>Author: <?php echo $post["author"];?></p>
-            <a href="readmore.php?post=<?php echo $post["id"]; ?>">Continue</a>
+            <a href="readmore?post=<?php echo $post["id"]; ?>">Continue</a>
         </div>
         <?php endforeach; ?>
     </div>
